@@ -11,15 +11,16 @@ export default {
 // export const TextFieldWrapper: Story<TextFieldProps> = (args) => <TextField {...args} />;
 
 export const TextFieldWrapper: Story<TextFieldProps> = (args) => {
-  const [text, setText] = useState('this is TextField');
+  const [text, setText] = useState('');
 
   return (
-    <TextField text={text} handleChangeText={setText} placeholder={args.placeholder} />
+    <TextField {...args} text={text} handleChangeText={setText} />
   );
 }
 
 TextFieldWrapper.args = {
   placeholder: 'placeholder',
+  disable: false,
 };
 
 TextFieldWrapper.storyName = 'TextField';
