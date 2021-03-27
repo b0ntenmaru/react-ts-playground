@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Story } from '@storybook/react/types-6-0';
-import { TextField, TextFieldProps } from 'components/atoms/TextField';
+import { TextField, TextFieldProps } from '@/components/atoms/TextField';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
