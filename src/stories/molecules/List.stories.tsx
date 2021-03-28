@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import { List, ListProps } from '@/components/molecules/List';
 
 export default {
-  title: 'atoms',
+  title: 'molecules',
   component: List,
 } as Meta;
 
