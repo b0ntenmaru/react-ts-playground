@@ -24,20 +24,23 @@ export const ListItem: React.FC<ListItemProps> = ({ text, active, onClick }) => 
   )
 };
 
-const ListItemActive = styled.div`
+const ListItemStyleBasic = `
   padding: 12px 16px;
   display: inline-block;
   width: 100%;
-  background: #1867c0;
+  cursor: pointer;
+  `;
+
+const ListItemActive = styled.div`
+  ${ListItemStyleBasic}
   color: #fff;
+  background: #1867c0;
 `;
 
 const ListItemDefault = styled.div`
-  padding: 12px 16px;
-  background: #fff;
-  display: inline-block;
-  width: 100%;
+  ${ListItemStyleBasic}
 
+  background: #fff;
   &:hover {
     background: #ccc;
   }
