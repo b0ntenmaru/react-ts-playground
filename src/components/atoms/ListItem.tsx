@@ -26,6 +26,8 @@ export const ListItem: React.FC<ListItemProps> = ({ text, active, onClick }) => 
 
 const ListItemActive = styled.div`
   padding: 12px 16px;
+  display: inline-block;
+  width: 100%;
   background: #1867c0;
   color: #fff;
 `;
@@ -33,6 +35,8 @@ const ListItemActive = styled.div`
 const ListItemDefault = styled.div`
   padding: 12px 16px;
   background: #fff;
+  display: inline-block;
+  width: 100%;
 
   &:hover {
     background: #ccc;
