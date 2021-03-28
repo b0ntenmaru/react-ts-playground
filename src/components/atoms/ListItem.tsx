@@ -4,20 +4,21 @@ import styled from 'styled-components';
 export interface ListItemProps {
   text: string;
   active: boolean;
+  onClick: () => void;
 };
 
-export const ListItem: React.FC<ListItemProps> = ({ text, active }) => {
+export const ListItem: React.FC<ListItemProps> = ({ text, active, onClick }) => {
 
   if (active) {
     return (
-      <ListItemActive>
+      <ListItemActive onClick={onClick}>
         { text }
       </ListItemActive>
     )
   }
 
   return (
-    <ListItemDefault>
+    <ListItemDefault onClick={onClick}>
       { text }
     </ListItemDefault>
   )
