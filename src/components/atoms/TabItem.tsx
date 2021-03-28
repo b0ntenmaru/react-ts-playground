@@ -29,15 +29,16 @@ const tabItemBaseStyle = `
   display: inline-block;
   font-size: 16px;
   line-height: 23px;
+  cursor: pointer;
 `;
 
 const TabItemActive = styled.div`
   ${tabItemBaseStyle}
-  border-bottom: 3px solid #5E4CA6;
+  border-bottom: 3px solid #ff0000;
 `;
 
 const TabItemDisable = styled.div`
   ${tabItemBaseStyle}
-  color: #C3C3D9;
-  border-bottom: 3px solid #C3C3D9;
+  color: #b7b7ca;
+  border-bottom: 3px solid #b7b7ca;
 `;
