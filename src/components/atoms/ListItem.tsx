@@ -4,20 +4,21 @@ import styled from 'styled-components';
 export interface ListItemProps {
   text: string;
   active: boolean;
+  onClick: () => void;
 };
 
-export const ListItem: React.FC<ListItemProps> = ({ text, active }) => {
+export const ListItem: React.FC<ListItemProps> = ({ text, active, onClick }) => {
 
   if (active) {
     return (
-      <ListItemActive>
+      <ListItemActive onClick={onClick}>
         { text }
       </ListItemActive>
     )
   }
 
   return (
-    <ListItemDefault>
+    <ListItemDefault onClick={onClick}>
       { text }
     </ListItemDefault>
   )
@@ -25,6 +26,8 @@ export const ListItem: React.FC<ListItemProps> = ({ text, active }) => {
 
 const ListItemActive = styled.div`
   padding: 12px 16px;
+  display: inline-block;
+  width: 100%;
   background: #1867c0;
   color: #fff;
 `;
@@ -32,6 +35,8 @@ const ListItemActive = styled.div`
 const ListItemDefault = styled.div`
   padding: 12px 16px;
   background: #fff;
+  display: inline-block;
+  width: 100%;
 
   &:hover {
     background: #ccc;
