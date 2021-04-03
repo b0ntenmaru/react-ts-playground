@@ -1,5 +1,5 @@
 import React from 'react';
-import { ListItem } from '@/components/atoms/ListItem';
+import { ListItem } from 'components/atoms/ListItem';
 
 export interface ListProps {
   listItems: IListItem[];

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { List } from '@/components/molecules/List';
+import { List } from 'components/molecules/List';
 
 const initialState = {
   listItems: [

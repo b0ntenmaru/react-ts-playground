@@ -1,5 +1,5 @@
 import React from 'react';
-import { GlobalNav } from '@/components/organisms/GlobalNav';
+import { GlobalNav } from 'components/organisms/GlobalNav';
 import { Story, Meta } from '@storybook/react/types-6-0';
 
 export default {
