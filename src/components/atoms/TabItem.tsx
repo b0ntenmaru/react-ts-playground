@@ -30,11 +30,13 @@ const tabItemBaseStyle = `
   font-size: 16px;
   line-height: 23px;
   cursor: pointer;
+  width: 170px;
+  text-align: center;
 `;
 
 const TabItemActive = styled.div`
   ${tabItemBaseStyle}
-  border-bottom: 3px solid #ff0000;
+  border-bottom: 3px solid #1867c0;
 `;
 
 const TabItemDisable = styled.div`

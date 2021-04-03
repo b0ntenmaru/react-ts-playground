@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { TabItem } from '@/components/atoms/TabItem';
 
 export interface TabsProps {
@@ -17,14 +18,20 @@ export const Tabs: React.FC<TabsProps> = ({ tabItems, select }) => {
     <div>
       {tabItems.map((tabItem, index) => {
         return (
-          <TabItem 
-            key={index}
-            label={tabItem.label}
-            active={tabItem.active}
-            select={() => select(tabItem)}
-          />
+          <TabItemWrapper key={index}>
+            <TabItem 
+              label={tabItem.label}
+              active={tabItem.active}
+              select={() => select(tabItem)}
+            />
+          </TabItemWrapper>
         );
       })}
     </div>
   );
 }
+
+const TabItemWrapper = styled.div`
+  display: inline-block;
+  margin-left: 8px;
+`;
