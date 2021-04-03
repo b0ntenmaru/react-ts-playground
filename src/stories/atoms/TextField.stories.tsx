@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
-import { TextField, TextFieldProps } from '@/components/atoms/TextField';
+import { TextField, TextFieldProps } from 'components/atoms/TextField';
 
 export default {
   title: 'atoms',

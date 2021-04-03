@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { TabItem } from '@/components/atoms/TabItem';
+import { TabItem } from 'components/atoms/TabItem';
 
 export interface TabsProps {
   tabItems: TabItemsProps[];

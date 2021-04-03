@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
-import { TabItem, TabItemProps } from '@/components/atoms/TabItem';
+import { TabItem, TabItemProps } from 'components/atoms/TabItem';
 
 export default {
   title: 'atoms',

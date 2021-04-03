@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { TextField } from '@/components/atoms/TextField';
+import { TextField } from 'components/atoms/TextField';
 
 export interface FormGroupTextFieldProps {
   text: string;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
-import { ListItem, ListItemProps } from '@/components/atoms/ListItem';
+import { ListItem, ListItemProps } from 'components/atoms/ListItem';
 
 export default {
   title: 'atoms',

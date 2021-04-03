@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FormGroupTextField, FormGroupTextFieldProps } from '@/components/molecules/FormGroupTextField';
+import { FormGroupTextField, FormGroupTextFieldProps } from 'components/molecules/FormGroupTextField';
 import { Story, Meta } from '@storybook/react/types-6-0';
 
 export default {
