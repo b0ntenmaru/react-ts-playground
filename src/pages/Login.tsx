@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export const Home = () => {
+export const Login = () => {
 
   return (
     <div>
-      pages/Home
-      <Link to="/login">Login</Link>
+      pages/Login
+      <Link to="/">Home</Link>
     </div>
   )
 };
