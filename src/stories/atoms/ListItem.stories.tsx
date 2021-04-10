@@ -9,13 +9,13 @@ export default {
 
 export const ListItemWrapper: Story<ListItemProps> = (args) => {
 
+  const text = 'コンテンツ1'
   return (
-    <ListItem {...args} />
+    <ListItem {...args}>{text}</ListItem>
   );
 };
 
 ListItemWrapper.args = {
-  text: 'コンテンツ１',
   active: false,
 }
 

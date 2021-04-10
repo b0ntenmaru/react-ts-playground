@@ -2,24 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 
 export interface ListItemProps {
-  text: string;
   active: boolean;
   onClick: () => void;
+  children: React.ReactNode;
 };
 
-export const ListItem: React.FC<ListItemProps> = ({ text, active, onClick }) => {
+export const ListItem: React.FC<ListItemProps> = ({ active, onClick, children }) => {
 
   if (active) {
     return (
       <ListItemActive onClick={onClick}>
-        { text }
+        { children }
       </ListItemActive>
     )
   }
 
   return (
     <ListItemDefault onClick={onClick}>
-      { text }
+      { children }
     </ListItemDefault>
   )
 };
